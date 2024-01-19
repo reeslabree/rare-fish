@@ -13,4 +13,12 @@ describe("rarefish", () => {
     const tx = await program.methods.initialize().rpc();
     console.log("Your transaction signature", tx);
   });
+
+  it("This is a test test!", async () => {
+    const tx = await program.methods.initialize().rpc();
+
+    console.log("tx signature: ", tx);
+
+    tx !== null ? console.log("success!") : console.log("failure!");
+  });
 });
