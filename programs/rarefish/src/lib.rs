@@ -7,7 +7,7 @@ pub mod rarefish {
     use super::*;
 
     pub fn initalize_rare_fish(ctx: Context<InitializeRareFish>) -> Result<()> {
-        
+
 
         Ok(())
     }
@@ -68,6 +68,7 @@ pub struct FishMarket {
 
 #[account]
 pub struct RareFish {
+    authority: Pubkey,
     seed: u64,
     token: Pubkey,
     gender: bool,
